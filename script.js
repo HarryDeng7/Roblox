@@ -98,12 +98,12 @@ function initShapes() {
   if (!holder || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
   const colors = [
-    "rgba(226,35,26,0.32)",
-    "rgba(255,255,255,0.13)",
-    "rgba(245,197,24,0.17)",
-    "rgba(226,35,26,0.15)",
-    "rgba(255,255,255,0.07)",
-    "rgba(226,35,26,0.24)",
+    "rgba(0,200,83,0.24)",
+    "rgba(7,61,30,0.1)",
+    "rgba(0,200,83,0.12)",
+    "rgba(7,61,30,0.06)",
+    "rgba(0,200,83,0.32)",
+    "rgba(0,200,83,0.16)",
   ];
 
   const kinds = ["sh-square", "sh-circle", "sh-rot", "sh-long", "sh-circle", "sh-square", "sh-rot"];
