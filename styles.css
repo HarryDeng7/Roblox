@@ -155,7 +155,7 @@ h1, h2, h3, h4 {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 72px;
   gap: 20px;
 }
@@ -225,6 +225,7 @@ h1, h2, h3, h4 {
   display: none;
   flex-direction: column;
   gap: 5px;
+  margin-left: auto; /* keeps the hamburger pinned right when visible */
   background: none;
   border: 0;
   padding: 10px;
@@ -243,6 +244,26 @@ h1, h2, h3, h4 {
 .nav-toggle.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
 .nav-toggle.active span:nth-child(2) { opacity: 0; }
 .nav-toggle.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+/* Wide screens: the header hugs the left edge of the window — the logo
+   sits at the very left and the menu items follow right after it. */
+@media (min-width: 1120px) {
+  .site-header .nav {
+    width: calc(100% - 48px);
+    max-width: none;
+  }
+
+  .nav-links {
+    margin-left: 32px;
+  }
+}
+
+/* Keep the hugging menu comfortable just above the tablet breakpoint. */
+@media (min-width: 1120px) and (max-width: 1360px) {
+  .nav-links {
+    gap: 18px;
+  }
+}
 
 /* ------------------------------------------------------------
    Hero
@@ -1192,7 +1213,7 @@ h1, h2, h3, h4 {
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1119px) {
   .nav-toggle {
     display: flex;
   }
@@ -1227,7 +1248,9 @@ h1, h2, h3, h4 {
   .nav-links .btn {
     margin-top: 12px;
   }
+}
 
+@media (max-width: 960px) {
   .learn-grid {
     grid-template-columns: 1fr;
     gap: 34px;
