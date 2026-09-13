@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roblox Build Day — Build Your First Game in One Week</title>
+  <meta name="description" content="Roblox Build Day is a free, week-long online building challenge. Get a creative theme on Monday, learn Roblox Studio as you build, and submit your own game by Friday. No experience needed." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%23e2231a'/%3E%3Crect%20x='9'%20y='9'%20width='14'%20height='14'%20fill='white'%20transform='rotate(45%2016%2016)'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true"><span class="brand-tilt"></span></span>
+        <span class="brand-text">Roblox <strong>Build Day</strong></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">What is Roblox?</a></li>
+        <li><a href="#what">What is Build Day?</a></li>
+        <li><a href="#week">How it works</a></li>
+        <li><a href="#learn">What you'll learn</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a class="btn btn-red btn-small" href="#signup">Sign up free</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-shapes" id="heroShapes" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="hero-eyebrow">
+          <span class="pill">FREE</span>
+          <span class="pill">100% ONLINE</span>
+          <span class="pill">SEP 28 – OCT 2, 2026</span>
+        </p>
+        <h1>Play games.<br /><span class="accent">Build one.</span></h1>
+        <p class="hero-sub">Roblox Build Day is a free, week-long online building challenge. Get a creative theme on Monday, learn Roblox Studio as you build, and submit your very own game by Friday. Zero experience needed.</p>
+        <div class="hero-cta">
+          <a href="#signup" class="btn btn-red btn-big">Sign up — it's free</a>
+          <a href="#week" class="btn btn-ghost btn-big">See how the week works</a>
+        </div>
+
+        <div class="countdown" id="countdown">
+          <p class="countdown-label" id="countdownLabel">The next Build Day starts in</p>
+          <div class="countdown-grid">
+            <div class="count-item"><span class="count-num" id="cdDays">--</span><span class="count-unit">days</span></div>
+            <div class="count-item"><span class="count-num" id="cdHours">--</span><span class="count-unit">hours</span></div>
+            <div class="count-item"><span class="count-num" id="cdMins">--</span><span class="count-unit">minutes</span></div>
+            <div class="count-item"><span class="count-num" id="cdSecs">--</span><span class="count-unit">seconds</span></div>
+          </div>
+        </div>
+
+        <ul class="hero-stats">
+          <li><strong>5</strong><span>days of building</span></li>
+          <li><strong>1</strong><span>game of your own</span></li>
+          <li><strong>0</strong><span>experience needed</span></li>
+          <li><strong>$0</strong><span>to join</span></li>
+        </ul>
+      </div>
+      <div class="hero-sticker" aria-hidden="true"><span class="sticker-big">100%</span><span>FREE</span></div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <div class="ticker-group">
+          <span>FREE</span><span class="dot">◆</span><span>100% ONLINE</span><span class="dot">◆</span><span>SEP 28 – OCT 2</span><span class="dot">◆</span><span>NO EXPERIENCE NEEDED</span><span class="dot">◆</span><span>BUILD YOUR FIRST GAME</span><span class="dot">◆</span><span>BADGES &amp; PRIZES</span><span class="dot">◆</span>
+        </div>
+        <div class="ticker-group">
+          <span>FREE</span><span class="dot">◆</span><span>100% ONLINE</span><span class="dot">◆</span><span>SEP 28 – OCT 2</span><span class="dot">◆</span><span>NO EXPERIENCE NEEDED</span><span class="dot">◆</span><span>BUILD YOUR FIRST GAME</span><span class="dot">◆</span><span>BADGES &amp; PRIZES</span><span class="dot">◆</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHAT IS IT -->
+    <section class="section" id="what">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">What is Roblox Build Day?</p>
+          <h2>A hackathon, but built for beginners.</h2>
+          <p class="lead">Hackathons are events where people build something from scratch — usually in one rushed weekend. Build Day takes that idea, spreads it over a whole week, and makes it 100% online and 100% beginner-friendly.</p>
+          <p class="mini-note">Brand-new to Roblox? Start with the plain-English guide: <a href="index.html">What is Roblox &amp; how it works</a>.</p>
+        </div>
+        <div class="what-grid stagger">
+          <article class="card reveal">
+            <div class="card-icon icon-red">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></svg>
+            </div>
+            <h3>A challenge theme</h3>
+            <p>Every Build Day kicks off with a creative theme. Your mission: make a game that brings it to life — an obby, a tycoon, a mystery... you decide.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon icon-gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="13" width="7" height="7" rx="1.5"/><rect x="14" y="13" width="7" height="7" rx="1.5"/><rect x="8.5" y="4" width="7" height="7" rx="1.5"/></svg>
+            </div>
+            <h3>Learn as you build</h3>
+            <p>No boring lectures. Short tutorials, tips, and example games teach you Roblox Studio while you make your own game, step by step.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon icon-green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 4h10v4a5 5 0 0 1-10 0z"/><path d="M7 5.5H4a3.5 3.5 0 0 0 3 4.5M17 5.5h3a3.5 3.5 0 0 1-3 4.5M12 13v4M9 21h6M10 17h4v4h-4z"/></svg>
+            </div>
+            <h3>Submit &amp; celebrate</h3>
+            <p>Turn in your game on Friday and show it off in our online showcase, where builders from around the world share what they made.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO -->
+    <section class="section section-alt" id="who">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Who is it for?</p>
+          <h2>Made for players. Trusted by parents.</h2>
+          <p class="lead">Never opened Roblox Studio? Perfect — you're exactly who we built this for.</p>
+        </div>
+        <div class="who-grid stagger">
+          <article class="card who-card who-players reveal">
+            <div class="card-icon icon-red">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7.5" r="3.5"/><path d="M5.5 20a6.5 6.5 0 0 1 13 0"/></svg>
+            </div>
+            <h3>For players</h3>
+            <p>You've played a hundred obbies. Now it's your turn to make one. Build Day is for anyone who has ever thought, "I could make this cooler."</p>
+            <ul class="check-list">
+              <li>If you play Roblox, you already qualify</li>
+              <li>Zero experience required</li>
+              <li>Work alone or with up to 3 friends</li>
+            </ul>
+          </article>
+          <article class="card who-card who-parents reveal">
+            <div class="card-icon icon-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.5 20 5.5v5.5c0 5-3.5 8.5-8 10.5-4.5-2-8-5.5-8-10.5V5.5z"/><path d="M8.8 12l2.2 2.2 4.2-4.4"/></svg>
+            </div>
+            <h3>For parents</h3>
+            <p>Build Day turns game time into learning time. Kids learn the basics of coding in Lua, design their own worlds, and practice problem solving — all inside a safe, moderated event.</p>
+            <ul class="check-list check-blue">
+              <li>100% free — no hidden costs</li>
+              <li>Safe, moderated, fully online</li>
+              <li>Real skills: coding, design, teamwork</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEEK -->
+    <section class="section" id="week">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">How the week works</p>
+          <h2>One week. Five steps. Your first game.</h2>
+          <p class="lead">Everything happens online and at your own pace. There's just one deadline: submit your game by Friday at 5 PM.</p>
+        </div>
+        <div class="day-grid stagger">
+          <article class="card day-card day-1 reveal">
+            <div class="day-head"><span class="day-tag">Day 1</span><span class="day-name">Monday</span></div>
+            <h3>Challenge drop</h3>
+            <p>The theme is revealed. Install Roblox Studio (it's free), join the event hub, and meet your fellow builders.</p>
+          </article>
+          <article class="card day-card day-2 reveal">
+            <div class="day-head"><span class="day-tag">Day 2</span><span class="day-name">Tuesday</span></div>
+            <h3>Learn the ropes</h3>
+            <p>Short beginner tutorials show you how to place parts, shape terrain, and write your very first lines of Lua.</p>
+          </article>
+          <article class="card day-card day-3 reveal">
+            <div class="day-head"><span class="day-tag">Day 3</span><span class="day-name">Wednesday</span></div>
+            <h3>Build your game</h3>
+            <p>Time to create! Build your experience with step-by-step guides, tips, and example games to borrow ideas from.</p>
+          </article>
+          <article class="card day-card day-4 reveal">
+            <div class="day-head"><span class="day-tag">Day 4</span><span class="day-name">Thursday</span></div>
+            <h3>Polish &amp; playtest</h3>
+            <p>Add sounds and effects, squash bugs, and playtest with friends until your game feels fun to play.</p>
+          </article>
+          <article class="card day-card day-5 reveal">
+            <div class="day-head"><span class="day-tag">Day 5</span><span class="day-name">Friday</span></div>
+            <h3>Submit &amp; celebrate</h3>
+            <p>Submit before 5 PM, then join the online showcase where everyone shows off what they built this week.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARN -->
+    <section class="section section-alt" id="learn">
+      <div class="container">
+        <div class="learn-grid">
+          <div class="learn-copy reveal">
+            <p class="eyebrow">What you'll build &amp; learn</p>
+            <h2>Finish the week as a game creator.</h2>
+            <p>You'll end Build Day with a <strong>playable Roblox experience</strong> that you designed and scripted yourself — maybe an obby, a racing game, a tycoon, or whatever the theme sparks.</p>
+            <p>And even if it's quick and dirty (that's the hackathon spirit!), you'll walk away with skills that stick around long after the week is over.</p>
+            <a href="#signup" class="btn btn-red">Start learning Monday</a>
+          </div>
+          <div class="skills-card reveal">
+            <h3>Skills you'll pick up</h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <span class="skill-check">✓</span>
+                <div><strong>Roblox Studio basics</strong><span>Parts, terrain, and the toolbox</span></div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-check">✓</span>
+                <div><strong>Your first Lua scripts</strong><span>Variables, loops, and events</span></div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-check">✓</span>
+                <div><strong>Game design</strong><span>Levels, obstacles, and a fun gameplay loop</span></div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-check">✓</span>
+                <div><strong>Playtesting</strong><span>How to test, break, and fix your own game</span></div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-check">✓</span>
+                <div><strong>Teamwork &amp; sharing</strong><span>Working with friends and giving feedback</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section class="section" id="why">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Why join?</p>
+          <h2>Why Build Day is worth your week</h2>
+        </div>
+        <div class="why-grid stagger">
+          <article class="card reveal">
+            <div class="card-icon icon-red">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.8l2.8 5.8 6.4.9-4.6 4.5 1.1 6.4L12 17.4l-5.7 3 1.1-6.4L2.8 9.5l6.4-.9z"/></svg>
+            </div>
+            <h3>Make your first game</h3>
+            <p>Go from player to creator in five days. You design it, you script it, you call the shots.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon icon-gold">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 4.5 14H11l-1 8 8.5-12H12z"/></svg>
+            </div>
+            <h3>Learn real skills</h3>
+            <p>Coding logic, design thinking, and problem solving — skills that matter far beyond Roblox.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon icon-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><circle cx="16.5" cy="9" r="2.4"/><path d="M17.2 13.8a4.5 4.5 0 0 1 3.3 6"/></svg>
+            </div>
+            <h3>Join the community</h3>
+            <p>Build alongside thousands of new creators, swap tips, and cheer each other on.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon icon-green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 4h10v4a5 5 0 0 1-10 0z"/><path d="M7 5.5H4a3.5 3.5 0 0 0 3 4.5M17 5.5h3a3.5 3.5 0 0 1-3 4.5M12 13v4M9 21h6M10 17h4v4h-4z"/></svg>
+            </div>
+            <h3>Earn badges &amp; prizes</h3>
+            <p>Every finisher gets a badge and certificate — the top picks win even more.</p>
+          </article>
+        </div>
+        <blockquote class="quote reveal">
+          <p>"We want everyone to see Roblox as a place to learn, not just to play. Build Day is where that starts."</p>
+          <footer>— Mary, Roblox Build Day team</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- PRIZES -->
+    <section class="section section-alt" id="prizes">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Prizes &amp; rewards</p>
+          <h2>What you earn</h2>
+          <p class="lead">Everyone who submits walks away a winner. The top picks just walk away a little shinier.</p>
+        </div>
+        <div class="prize-grid stagger">
+          <article class="card prize-card prize-everyone reveal">
+            <h3>Everyone who submits</h3>
+            <ul class="check-list">
+              <li><strong>Build Day badge</strong> for your Roblox profile</li>
+              <li><strong>Official certificate</strong> — print it, frame it</li>
+              <li><strong>A spot in the showcase</strong> on Friday</li>
+              <li><strong>Bragging rights</strong> — you made a real game</li>
+            </ul>
+          </article>
+          <article class="card prize-card prize-winners reveal">
+            <h3>Top picks</h3>
+            <ul class="check-list check-gold">
+              <li><strong>Hall of Fame feature</strong> on the Build Day page</li>
+              <li><strong>Exclusive avatar items</strong> for your Roblox character</li>
+              <li><strong>A live session</strong> with professional Roblox creators</li>
+              <li><strong>Mega bragging rights</strong> — obviously</li>
+            </ul>
+          </article>
+        </div>
+        <p class="prize-note reveal">Build Day is about making something, not making it perfect. Every game that gets submitted is a win in our book.</p>
+      </div>
+    </section>
+
+    <!-- SIGNUP -->
+    <section class="section" id="signup">
+      <div class="container">
+        <div class="signup-panel reveal">
+          <div class="signup-copy">
+            <p class="eyebrow eyebrow-light">Ready to build?</p>
+            <h2>Sign up for the next Build Day.</h2>
+            <p>All you need is a Roblox account, the free Roblox Studio app on a Windows PC or Mac, and an internet connection.</p>
+            <ol class="steps">
+              <li><span>1</span>Create a Roblox account (or use yours)</li>
+              <li><span>2</span>Install Roblox Studio — it's free</li>
+              <li><span>3</span>Sign up and we'll email the challenge on Monday</li>
+            </ol>
+            <ul class="req-list">
+              <li>Free Roblox account</li>
+              <li>Free Roblox Studio app</li>
+              <li>Internet connection</li>
+              <li>A little imagination</li>
+            </ul>
+          </div>
+          <div class="signup-form-card">
+            <form id="signupForm" novalidate>
+              <h3>Get your challenge kit</h3>
+              <div class="field">
+                <label for="name">Name or nickname</label>
+                <input id="name" name="name" type="text" placeholder="e.g. BlockyBuilder99" required />
+              </div>
+              <div class="field">
+                <label for="email">Email (player's or parent's)</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+              </div>
+              <div class="field">
+                <label for="age">Age group</label>
+                <select id="age" name="age" required>
+                  <option value="">Choose...</option>
+                  <option>8 – 11</option>
+                  <option>12 – 15</option>
+                  <option>16 – 18</option>
+                  <option>19+ (mentors &amp; helpers)</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-dark btn-big btn-block">Send me the challenge</button>
+              <p class="form-note">Free forever. No spam — just the challenge, tips, and showcase links. Players under 13 need a parent's help to sign up.</p>
+            </form>
+            <div class="form-success" id="formSuccess" hidden>
+              <span class="success-check">✓</span>
+              <h3>You're on the list!</h3>
+              <p>Check your inbox — your challenge kit and the Monday theme will arrive there. See you at Build Day!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container container-narrow">
+        <div class="section-head reveal">
+          <p class="eyebrow">Questions?</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do I need any building experience?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer"><p>Nope. Build Day is designed for first-time builders. Our tutorials start from the very beginning — if you can play a game, you can start building one.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What do I need to take part?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer"><p>A free Roblox account, the free Roblox Studio app on a Windows PC or Mac, and an internet connection. That's it.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do I have to be online at certain times?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer"><p>No. You build at your own pace during the week. The only milestones are getting the theme on Monday and submitting your game by Friday at 5 PM.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I work with friends?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer"><p>Absolutely. You can build solo or in a team of up to four people. Just make sure every teammate gets credit on your submission.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What ages is Build Day for?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer"><p>Build Day is for ages 8 and up. Players under 13 need a parent's permission to create a Roblox account — and parents are always welcome to join the fun.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What does it cost?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer"><p>Nothing. The event, the tutorials, and Roblox Studio are all 100% free. Free pizza and soda are not included, sadly.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What if my game isn't perfect?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer"><p>Perfect is overrated — hackathons are about making something fun and experimental. Submit whatever you've got: everyone who submits earns the badge and certificate.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+      <div class="container">
+        <div class="final-inner reveal">
+          <h2>Ready to go from player to creator?</h2>
+          <p>One week, one theme, one game that's all yours. It's free — what are you waiting for?</p>
+          <a href="#signup" class="btn btn-red btn-big">Sign up for Build Day</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true"><span class="brand-tilt"></span></span>
+          <span class="brand-text">Roblox <strong>Build Day</strong></span>
+        </a>
+        <p>A week-long online building challenge for the Roblox community. Turn playtime into build time.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="index.html">What is Roblox?</a>
+        <a href="#what">What is Build Day?</a>
+        <a href="#week">How the week works</a>
+        <a href="#learn">What you'll learn</a>
+        <a href="#prizes">Prizes</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4>For parents</h4>
+        <p class="footer-note">Questions about safety, privacy, or screen time? Build Day is free, moderated, and designed with families in mind.</p>
+        <a href="#faq">Read the FAQs</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Roblox Build Day. All rights reserved.</p>
+      <p class="fine-print">Roblox, Roblox Studio, and related marks are trademarks of Roblox Corporation. Build Day is a community building challenge for Roblox creators.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
